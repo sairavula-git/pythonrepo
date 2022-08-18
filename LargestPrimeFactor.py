@@ -1,3 +1,6 @@
+#This code gives the largest primefactor of a given number
+#This is solution to problem 3 in projectEuler
+
 print("Enter number to find the largest prime factor:")
 num1 = int(input())
 primeFactList = []

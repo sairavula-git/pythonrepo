@@ -1,3 +1,5 @@
+#This code prints the list of fibonacci series upto a given range
+
 print("Fibonacci series upto: ")
 userinput = int(input())
 first=0

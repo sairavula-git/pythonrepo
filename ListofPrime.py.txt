@@ -1,3 +1,7 @@
+#This is probably my first program in python
+#I wanted a complex program to start with
+#It was my ice breaker and made me comfortable to code again
+
 print("List of prime numbers upto: ")
 userinput = int(input())
 

@@ -1,3 +1,6 @@
+#This is a random program for fun. 
+#The user need to guess a random integer based on given clues.
+
 from numpy import random
 randomNumber = random.randint(1,100)
 print("Guess the random integer from 1 to 100:")

@@ -1,3 +1,6 @@
+#This is a normal program to find the Highest Common Factor between two given numbers
+#This was written in preparation for a solution to another ProjectEuler problem
+
 print("Enter the First number:")
 num1=int(input())
 print("Enter the Second number:")
