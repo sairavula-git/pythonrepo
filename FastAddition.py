@@ -3,6 +3,7 @@
 
 from numpy import random
 import time
+import os
 user_Option = input("This game gives you two number to add.\nTo start playing press any key or to exit press X or x\n")
 
 def addition_code():
@@ -29,3 +30,4 @@ def addition_code():
 while user_Option != 'x' and user_Option != 'X':
     addition_code()
     user_Option = input("To continue playing press any key or to exit press X or x\n")
+    os.system('cls')
