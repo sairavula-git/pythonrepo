@@ -1,3 +1,7 @@
+#This program contains functions for various patterns
+#This is for breaking ice related to pattern type programs
+
+
 def star_pattern(n):
     for x in range(1,n+1):
         for y in range(1,x+1):
