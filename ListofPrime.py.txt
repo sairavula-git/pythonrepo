@@ -5,19 +5,21 @@
 print("List of prime numbers upto: ")
 userinput = int(input())
 
-if(userinput>2):
-    listofprime = [2];
+if userinput>2:
+    listofprime = [2]
+    sumofprime = 2
     for x in range(3,userinput):
-        factors = 0;
+        factors = 0
         for y in range(2,x):
             if(x%y==0):
-                factors=factors+1;
+                factors=factors+1
                 break
-            if(y*y>x):
+            if y*y>x:
                 break
-        if (factors==0):
+        if factors==0:
             listofprime.append(x)
+            sumofprime = sumofprime + x
     print("The list of Prime numbers upto {} are \n".format(userinput))
     print(listofprime)
     print("Total Count: {}".format(len(listofprime)))
-    
+    print("The sum of primes is {}".format(sumofprime))    
