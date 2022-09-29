@@ -1,7 +1,6 @@
 #This program finds the first Triangle number to have 500 factors
 #This is solution to Problem 12 of Project Euler
 import math
-from tkinter import Y
 def fact_check(tri_num):
     factors = 2
     for x in range(2,int(math.sqrt(tri_num))):
