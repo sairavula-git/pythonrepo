@@ -1,3 +1,4 @@
+moves = 0
 def clear_board():
     return [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
@@ -16,6 +17,9 @@ def update_board(board, player, position):
         print("Invalid Choice, please choose again.")
         return board, player
     board[row][col] = player
+    print_board(board)
+    global moves 
+    moves +=  1
     if check_winner(board,player):
         player = toggle_player(player)
     return board, player
@@ -38,7 +42,6 @@ def check_winner(board, player):
     condition6 = (board[0][1] == board[1][1]) and (board[1][1] == board[2][1])
     condition7 = (board[0][2] == board[1][2]) and (board[1][2] == board[2][2])
     if condition1 or condition2 or condition3 or condition4 or condition5 or condition6 or condition7:
-        print(f"{player} wins...!!")
         return False
     return True
 
@@ -57,13 +60,14 @@ def main():
     player = 'X'
     # board, player = update_board(board, player, int(input(f"Player{player}: Choose your move position: ")))
     # print_board(board)
-    moves = 0
+    #moves = 0
     while check_winner(board, player) and moves < 9:
         board, player = update_board(board, player, int(input(f"Player{player}: Choose your move position: ")))
-        print_board(board)
-        moves += 1
+        #moves += 1
     if moves == 9 and check_winner(board, player):
         print("Game drawn..!!")
+    if not check_winner(board, player):
+        print(f"{player} wins...!!")
 
 
 main()
