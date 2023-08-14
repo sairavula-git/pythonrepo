@@ -103,7 +103,7 @@ def minimax(board, mark, choice, ismax,depth):
 def main():
     board = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
     game = 0
-    os.system('cls')
+    os.system('clear')
     print("TicTacToe Game by Sai Ravula")    
     mark = input("Choose your symbol as 'X' or 'O': ")
     while mark not in ['X','O','x','o']:
@@ -111,7 +111,7 @@ def main():
     mark = mark.capitalize()
     player = mark    
     while not game:
-        os.system('cls')
+        os.system('clear')
         print("TicTacToe Game by Sai Ravula")
         print("Human Player >>> {} | Computer >>> {}".format(player,toggle_mark(player)))
         print_board(board)
@@ -125,7 +125,7 @@ def main():
         game = check_winner(board)
         if game: break
         mark = toggle_mark(mark)
-    os.system('cls')
+    os.system('clear')
     print("TicTacToe Game by Sai Ravula")
     print("Human >>> {} | Computer >>> {}".format(player,toggle_mark(player)))
     print_board(board)
